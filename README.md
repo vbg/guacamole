@@ -2,7 +2,7 @@
 
 ![Client Remote Access](images/remote_access.jpg)
 
-All Icons in the above diagram are licensed by [Red Hat Inc] (https://www.redhat.com/en) under [Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/)
+All Icons in the above diagram are licensed by [Red Hat Inc](https://www.redhat.com/en) under [Creative Commons Attribution 3.0 Unported license](https://creativecommons.org/licenses/by/3.0/)
 
 * Python Version (For now, I have used Python 3.6)\
   The URI to refer is - https://wiki.openstack.org/wiki/Python3#Current_Status  \
