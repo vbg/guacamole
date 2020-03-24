@@ -92,5 +92,5 @@ All Icons in the above diagram are licensed by [Red Hat Inc](https://www.redhat.
 	* #firewall-cmd --reload
 * Check whether the host can be connected via VNC
 	* On a remote host, install vncviewer 
-	* # yum install tiger
+	* #yum install tigervnc
 	* vncviewer *(Enter server host/IP and port [5901 in our example] and test)*. If vncviewer works, guacamole VNC connection will work.
