@@ -1,4 +1,4 @@
-#Apache Guacamole Setup 
+# Apache Guacamole Setup 
 
 ## This is to setup client-less secure access to servers for remote setup. A sample image for client access is shown below :
 
@@ -28,4 +28,6 @@ All Icons in the above diagram are licensed by [Red Hat Inc](https://www.redhat.
 
 * Pull the required docker images
 
-..* $docker pull postgres
+ * $ docker pull postgres
+ * $ docker pull guacamole/guacd
+ * $ docker pull guacamole/guacamole
