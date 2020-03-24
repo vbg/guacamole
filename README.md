@@ -51,7 +51,7 @@ All Icons in the above diagram are licensed by [Red Hat Inc](https://www.redhat.
 	* Restart Docker DB --> $ docker start guacamole-postgres-basic
 	
 * Install psql client on localhost to connect to the Database Container and create schema in the newly created DB
-	* # yum install postgresql
+	* #yum install postgresql
 	* $ docker inspect guacamole-postgres-basic | grep IPAddress *(To get the IP address of the running DB Container)*
 	* $ cat initdb.sql | psql -h 172.17.0.2 -U postgres -d guacamole_db -f - *(Please cd to the folder containing the sql script generated before running this command)*
 
@@ -79,17 +79,17 @@ All Icons in the above diagram are licensed by [Red Hat Inc](https://www.redhat.
 
 * Remember - VNC does not ask for username and password, instead it depends on the user who execeuted the VNCserver on the server. **Hence never run vncserver as root**
 * On the host which you want to use VNC, ensure GNOME is installed. In my case (as should be in most cases), install VNC server on the docker host. Commands that I ran were :
-	* # yum groupinstall "GNOME Desktop" "Graphical Administration Tools"
-	* # yum install tigervnc-server
-	* # su - remoteadmin
+	* #yum groupinstall "GNOME Desktop" "Graphical Administration Tools"
+	* #yum install tigervnc-server
+	* #su - remoteadmin
 	* $ vncserver *(Please specify password and read-only options when asked)*
 * Allow firewall to access vncserver ports 
-	* # netstat -tulpn | grep -i vnc
+	* #netstat -tulpn | grep -i vnc
 	* In my case the ports were **5901**
 	* Allow ports 5901 (both tcp and udp), though it might just work with one protocol *(Please test if only one protocol is sufficient)*
-	* # firewall-cmd --permanent --zone public --add-port=5901/tcp
-	* # firewall-cmd --permanent --zone public --add-port=5901/udp
-	* # firewall-cmd --reload
+	* #firewall-cmd --permanent --zone public --add-port=5901/tcp
+	* #firewall-cmd --permanent --zone public --add-port=5901/udp
+	* #firewall-cmd --reload
 * Check whether the host can be connected via VNC
 	* On a remote host, install vncviewer 
 	* # yum install tiger
