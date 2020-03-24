@@ -28,6 +28,7 @@ All Icons in the above diagram are licensed by [Red Hat Inc](https://www.redhat.
 
 * Pull the required docker images
 
- * $ docker pull postgres
- * $ docker pull guacamole/guacd
- * $ docker pull guacamole/guacamole
+	* docker pull postgres
+	* docker pull guacamole/guacd
+	* $ docker pull guacamole/guacamole
+
