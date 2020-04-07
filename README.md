@@ -60,7 +60,7 @@ All Icons in the above diagram are licensed by [Red Hat Inc](https://www.redhat.
 	* bash docker_scripts/docker_start_guacamole.sh
 
 * Check by opening the Guacamole Login Page(http://$SERVER_IP:8080/guacamole)
-	* Login as user-> guacadmin and passwdor -> guacadmin
+	* Login as user-> guacadmin and password -> guacadmin
 	* Select Settings from the dropdown menu in the top-right section of the screen and Select Preferences and Change the default password
 	* Also, better to create a new User from the settings menu, give it a password with permissions to create new Connections and Connection Groups *(In my case, I created a user - vbg)*
 	* Logout as guacadmin
